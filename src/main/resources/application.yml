@@ -1,0 +1,24 @@
+beetl:
+  suffix: html
+  enabled: true
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: resume
+
+---
+spring:
+  profiles: dev
+  redis:
+    host: 47.105.51.137
+    port: 6379
+  data:
+    mongodb:
+      host: 47.105.51.137
+      port: 27017
+      database: zealsay
+      username: zeal
+      password: zeal3230
+      authentication-database: admin
